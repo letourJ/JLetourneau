@@ -1,0 +1,308 @@
+/* Reset default browser margins and padding */
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+}
+
+/* Navigation bar */
+.navbar {
+    background: #4b6d3a;
+}
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #000;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* Header section */
+.header {
+    background-image: url("images/header-background.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* overlay */
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Centered text description in header */
+.description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+.description h1 {
+    color: #9ada7b;
+}
+.description p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+.description button {
+    border: 1px solid #4b6d3a;
+    background: #4b6d3a;
+    border-radius: 0;
+    color: #fff;
+}
+.description button:hover {
+    border: 1px solid #fff;
+    background: #fff;
+    color: #000;
+}
+
+/* Features section */
+.features {
+    margin: 4em auto;
+    padding: 1em;
+    position: relative;
+}
+.feature-title {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.features img {
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
+}
+.features .form-control,
+.features input {
+    border-radius: 0;
+}
+.features .btn {
+    background-color: #4b6d3a;
+    border: 1px solid #4b6d3a;
+    color: #fff;
+    margin-top: 20px;
+}
+.features .btn:hover {
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+/* Team section */
+.background {
+    background: #dedec8;
+    padding: 4em 0;
+}
+.team {
+    color: #5e5e55;
+    padding: 0 180px;
+}
+
+/* Team Card Styling */
+.team-card-container {
+    display: block !important;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.team-headshot {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    border: 3px solid #4b6d3a;
+    display: block;
+}
+
+.team-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #333;
+    line-height: 1.2;
+}
+
+.team-description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #5e5e55;
+    margin: 0;
+}
+
+/* Footer section */
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 30px;
+}
+.footer-copyright {
+    color: #666;
+    padding: 40px 0;
+}
+
+/* PROJECTS PAGE */
+
+/* Page header styling */
+.projects-header {
+    background-color: #4b6d3a;
+    padding: 60px 0 40px;
+    text-align: center;
+    color: white;
+}
+.projects-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* Projects section styling */
+.projects {
+    margin: 4em auto;
+    padding: 1em;
+    position: relative;
+}
+.project-card {
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.project-card img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+.project-card .card-body {
+    padding: 25px;
+}
+.project-card .card-title {
+    color: #4b6d3a;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.project-card .btn {
+    background-color: #4b6d3a;
+    border: 1px solid #4b6d3a;
+    color: #fff;
+}
+.project-card .btn:hover {
+    background-color: #3a5530;
+    border: 1px solid #3a5530;
+}
+
+/* Project image hover effects */
+.project-image {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.project-image:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+
+    .description h1 {
+        font-size: 2em;
+    }
+
+    .description p {
+        font-size: 1.2rem;
+    }
+
+    .features {
+        margin: 0;
+    }
+
+    .team {
+        padding: 0 20px;
+    }
+
+    .team-headshot {
+        width: 150px;
+        height: 150px;
+    }
+
+    .team-name {
+        font-size: 1.3rem;
+    }
+
+    .team-description {
+        font-size: 1rem;
+    }
+
+    /* Projects page mobile fixes */
+    .projects-header {
+        padding: 40px 0 20px;
+    }
+
+    .projects-header h1 {
+        font-size: 2em;
+    }
+
+    .projects {
+        margin: 2em auto;
+    }
+
+    .project-card img {
+        height: 200px;
+    }
+}
+/* Feature Card Styling for clickable cards */
+.feature-card {
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: block;
+}
+
+.feature-card:hover {
+    background-color: rgba(75, 109, 58, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.card-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
